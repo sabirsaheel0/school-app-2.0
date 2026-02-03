@@ -31,9 +31,9 @@ function App() {
   });
 
   // API Base URLs
-  const STUDENT_SERVICE_URL = "http://localhost:5001";
-  const TEACHER_SERVICE_URL = "http://localhost:5002";
-  const EMPLOYEE_SERVICE_URL = "http://localhost:5003";
+  const STUDENT_SERVICE_URL = "http://192.168.1.188:5001";
+  const TEACHER_SERVICE_URL = "http://192.168.1.188:5002";
+  const EMPLOYEE_SERVICE_URL = "http:/192.168.1.188:5003";
 
   // ---------- Health Check ----------
   const checkService = async (url, key) => {

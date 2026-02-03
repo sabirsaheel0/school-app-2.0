@@ -1,0 +1,5 @@
+/home/exodus/devops/homework/school-app-2/school-app/teacherservice/src/main/java/com/kindergarten/teacherservice/service/TeacherService.java
+/home/exodus/devops/homework/school-app-2/school-app/teacherservice/src/main/java/com/kindergarten/teacherservice/model/Teacher.java
+/home/exodus/devops/homework/school-app-2/school-app/teacherservice/src/main/java/com/kindergarten/teacherservice/repository/TeacherRepository.java
+/home/exodus/devops/homework/school-app-2/school-app/teacherservice/src/main/java/com/kindergarten/teacherservice/controller/TeacherController.java
+/home/exodus/devops/homework/school-app-2/school-app/teacherservice/src/main/java/com/kindergarten/teacherservice/TeacherServiceApplication.java
