@@ -1,4 +1,23 @@
 services:
+
+  client:
+    build: ./frontend
+    depends_on:
+      - employee
+    ports:
+      - "3000:3000"
+
+  employee:
+    build: ./employeeservice
+    ports: 
+      - "5003:5003"
+    environment:
+      MONGODB_URI: mongodb://myUser:myPassword@mongo:27017/kindergarten?authSource=admin
+      DATABASE_NAME: kindergarten
+    depends_on:
+      - mongo
+
+
   mongo:
     image: mongo
     restart: always
