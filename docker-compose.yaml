@@ -4,6 +4,8 @@ services:
     build: ./frontend
     depends_on:
       - employee
+      - student
+      - teacher
     ports:
       - "3000:3000"
 
@@ -21,6 +23,16 @@ services:
     build: ./studentservice
     ports:
       - "5001:5001"
+    environment:
+      MONGODB_URI: mongodb://myUser:myPassword@mongo:27017/kindergarten?authSource=admin
+      DATABASE_NAME: kindergarten
+    depends_on:
+      - mongo
+
+  teacher:
+    build: ./teacherservice
+    ports:
+      - "5002:5002"
     environment:
       MONGODB_URI: mongodb://myUser:myPassword@mongo:27017/kindergarten?authSource=admin
       DATABASE_NAME: kindergarten
