@@ -17,6 +17,15 @@ services:
     depends_on:
       - mongo
 
+  student:
+    build: ./studentservice
+    ports:
+      - "5001:5001"
+    environment:
+      MONGODB_URI: mongodb://myUser:myPassword@mongo:27017/kindergarten?authSource=admin
+      DATABASE_NAME: kindergarten
+    depends_on:
+      - mongo
 
   mongo:
     image: mongo
