@@ -1,3 +1,10 @@
+Working Screenshots
+
+<img width="1914" height="918" alt="Screenshot 2026-02-03 152203" src="https://github.com/user-attachments/assets/01ac528c-e412-41c8-986e-75084242190b" />
+<img width="1908" height="919" alt="Screenshot 2026-02-03 152208" src="https://github.com/user-attachments/assets/036f5881-ac40-4273-8815-dd35e9fa1bce" />
+<img width="1919" height="906" alt="Screenshot 2026-02-03 152213" src="https://github.com/user-attachments/assets/b9a491cd-eee3-441c-b4c5-7f89f101ef8e" />
+
+
 
 # Kindergarten Project – Run Locally
 
