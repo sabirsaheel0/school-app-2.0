@@ -1,18 +1,27 @@
 services:
 
+  nginx:
+    build: ./nginx
+    restart: always
+    depends_on: 
+      - client
+      - employee
+      - student
+      - teacher
+    ports:
+      - "80:80"
+    
   client:
     build: ./frontend
     depends_on:
       - employee
       - student
       - teacher
-    ports:
-      - "3000:3000"
+
 
   employee:
     build: ./employeeservice
-    ports: 
-      - "5003:5003"
+
     environment:
       MONGODB_URI: mongodb://myUser:myPassword@mongo:27017/kindergarten?authSource=admin
       DATABASE_NAME: kindergarten
@@ -21,8 +30,7 @@ services:
 
   student:
     build: ./studentservice
-    ports:
-      - "5001:5001"
+
     environment:
       MONGODB_URI: mongodb://myUser:myPassword@mongo:27017/kindergarten?authSource=admin
       DATABASE_NAME: kindergarten
@@ -31,8 +39,7 @@ services:
 
   teacher:
     build: ./teacherservice
-    ports:
-      - "5002:5002"
+
     environment:
       MONGODB_URI: mongodb://myUser:myPassword@mongo:27017/kindergarten?authSource=admin
       DATABASE_NAME: kindergarten
