@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-deployment
+spec:
+  selector:
+    matchLabels:
+      app: student
+  template:
+    metadata:
+      labels:
+        app: student
+    spec:
+      containers:
+      - name: student
+        image: sabirsaheel0/school-app-student:0.1
+        ports:
+        - containerPort: 5001
+        env:
+        - name: MONGODB_URI
+          value: mongodb://myUser:myPassword@mongodb:27017/kindergarten?authSource=admin
+        - name: DATABASE_NAME
+          value: kindergarten
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: student-clusterip
+spec:
+  selector:
+    app: student
+  ports:
+  - port: 5001
+    targetPort: 5001
