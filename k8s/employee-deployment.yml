@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: employee
-        image: sabirsaheel0/school-app-employee:01
+        image: sabirsaheel0/school-app-employee:0.1
         ports:
         - containerPort: 5003
         env:
