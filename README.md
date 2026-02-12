@@ -1,3 +1,7 @@
+Grafana Working Screenshot
+<img width="1919" height="1032" alt="Screenshot 2026-02-12 161438" src="https://github.com/user-attachments/assets/09551b24-f819-4d21-8ea3-9e36d60fe8a8" />
+<img width="1919" height="1010" alt="Screenshot 2026-02-12 161442" src="https://github.com/user-attachments/assets/7c51b9a0-7cb5-4352-a9ff-239579eb6753" />
+
 
 # Kindergarten Project – Run Locally
 
